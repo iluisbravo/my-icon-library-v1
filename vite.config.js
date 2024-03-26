@@ -6,10 +6,6 @@ import path from 'path'
 export default defineConfig({
   plugins: [
     react(),
-    svgr({
-      svgrOptions: {
-        configFile: path.resolve(__dirname, 'svgr.config.js'),
-      },
-    }),
+    svgr(),
   ],
 })
